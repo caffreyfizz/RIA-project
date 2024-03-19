@@ -69,7 +69,7 @@
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>170</y>
+      <y>140</y>
       <width>91</width>
       <height>23</height>
      </rect>
@@ -82,9 +82,9 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>260</y>
+      <y>270</y>
       <width>631</width>
-      <height>81</height>
+      <height>71</height>
      </rect>
     </property>
     <property name="font">
@@ -127,7 +127,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>210</y>
+      <y>180</y>
       <width>621</width>
       <height>31</height>
      </rect>
@@ -143,13 +143,47 @@
     <property name="geometry">
      <rect>
       <x>320</x>
-      <y>170</y>
+      <y>140</y>
       <width>91</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
      <string>Удалить файл</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>219</y>
+      <width>641</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bodoni MT Poster Compressed</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Укажите минимальный размер пылинки</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="size_edit">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>260</y>
+      <width>271</width>
+      <height>20</height>
+     </rect>
     </property>
    </widget>
   </widget>

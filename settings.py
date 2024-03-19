@@ -12,7 +12,6 @@ if hasattr(QtCore.Qt, 'AA_EnableHighDpiScaling'):
 
 if hasattr(QtCore.Qt, 'AA_UseHighDpiPixmaps'):
     QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_UseHighDpiPixmaps, True)
-    
 
 
 class Settings(QMainWindow):
@@ -22,7 +21,6 @@ class Settings(QMainWindow):
         self.setWindowTitle("Настройки")
         
         self.open_files = []
-        self.file_name = ""
 
         self.edit_file.clicked.connect(self.open_file)
         self.del_btn.clicked.connect(self.delete_file)
@@ -48,9 +46,11 @@ class Settings(QMainWindow):
             print("ERROR-02: No file selected to delete")
 
     def start(self):
-        if self.file_name and os.listdir("./dust_photos"):
+        if f"{self.file_name.text()}.png" in os.listdir("./dust_photos"):
+            print(True)
             os.system('python ./main.py')
-            return self.file_name
+        else:
+            print("ERROR-03: The file is not selected or the file name is not correct")
 
 
 if __name__ == '__main__':

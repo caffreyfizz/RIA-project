@@ -1,10 +1,8 @@
 import numpy as np
-import sys
 from PIL import Image
 import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
 import csv, time, cv2, pytesseract
-from settings import file_name
 
 pytesseract.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR/tesseract.exe'
 
@@ -19,7 +17,7 @@ ax2 = fig.add_subplot(gs[1, 0])
 ax3 = fig.add_subplot(gs[:, 1])
 
 # select a file
-filename = ""
+filename = "image 1"
 img = Image.open("dust_photos/" + filename + ".png")
 
 # text from picture
@@ -50,7 +48,7 @@ contours2, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_TC89
 res = cv2.imread("dust_cropped/"+ filename +"_cropped.png")
 propr = (all_len) / len(res)
 
-min_area = 1 # minimum dust particle size
+min_area = 0.5
 
 min_area_px = ((np.sqrt((min_area ** 2) / 2) / 2) ** 2 * np.pi) / (propr ** 2)
 filtered_contours1 = []
