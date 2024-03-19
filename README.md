@@ -2,12 +2,12 @@
 Reactor image analysis - An algorithm designed for analyzing an image in a thermonuclear reactor. The main task was to recognize radioactive dust particles in the picture, count their number, determine their sizes, and create a table and a diagram.
 
 ## Content
-- [Technologies](#технологии)
-- [Beginning of work](#начало-работы)
-- [Principle of operation](#contributing)
-- [Result](#to-do)
-- [The project team](#команда-проекта)
-- [License](#лицензия)
+- [Technologies](#Technologies)
+- [Beginning of work](#Beginning-of-work)
+- [Principle of operation](#Principle-of-operation)
+- [Result](#Result)
+- [The project team](#The-project-team)
+- [License](#License)
 
 ## Technologies
 - [OpenCV](https://pypi.org/project/opencv-python/)
